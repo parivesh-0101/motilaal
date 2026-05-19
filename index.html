@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Motilaal-Oswal Broker | Market Insights Community</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(196, 157, 67, 0.10), transparent 30%),
+        linear-gradient(135deg, #f4f7fb 0%, #eef2f8 45%, #f8fafc 100%);
+      color: #10213a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .shell {
+      width: 100%;
+      max-width: 760px;
+      background: #ffffff;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 24px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.10);
+      overflow: hidden;
+    }
+
+    .hero-band {
+      background: linear-gradient(90deg, #10213a 0%, #18345b 55%, #1e3f6d 100%);
+      color: #ffffff;
+      padding: 18px 28px;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 42px 38px 34px;
+    }
+
+    .brand-mark {
+      display: inline-block;
+      margin-bottom: 14px;
+      padding: 8px 14px;
+      background: rgba(193, 148, 53, 0.10);
+      color: #9a6a0a;
+      border: 1px solid rgba(193, 148, 53, 0.20);
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 40px;
+      line-height: 1.15;
+      color: #0f172a;
+      max-width: 620px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      line-height: 1.5;
+      color: #1d4b8f;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .subtext {
+      font-size: 17px;
+      line-height: 1.75;
+      color: #475569;
+      max-width: 620px;
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 20px;
+      margin-bottom: 28px;
+    }
+
+    .panel {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 22px;
+    }
+
+    .panel h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+      color: #0f172a;
+    }
+
+    .panel ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .panel li {
+      margin-bottom: 10px;
+      color: #334155;
+      line-height: 1.65;
+    }
+
+    .mini-card {
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      border: 1px solid #e2e8f0;
+      border-radius: 18px;
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .mini-label {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      color: #9a6a0a;
+      margin-bottom: 8px;
+    }
+
+    .mini-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+
+    .mini-text {
+      font-size: 15px;
+      line-height: 1.65;
+      color: #64748b;
+    }
+
+    .cta-wrap {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      text-decoration: none;
+      background: linear-gradient(90deg, #10213a 0%, #1e3f6d 100%);
+      color: #ffffff;
+      padding: 16px 34px;
+      border-radius: 14px;
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      box-shadow: 0 14px 28px rgba(16, 33, 58, 0.18);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 34px rgba(16, 33, 58, 0.22);
+    }
+
+    .cta-note {
+      margin-top: 14px;
+      font-size: 13px;
+      color: #64748b;
+    }
+
+    .disclaimer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 13px;
+      line-height: 1.75;
+      color: #6b7280;
+    }
+
+    @media (max-width: 720px) {
+      .content {
+        padding: 28px 22px 24px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .subtext {
+        font-size: 15px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cta-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="hero-band">Market Learning Community</div>
+
+    <div class="content">
+      <div class="brand-mark">Motilaal-Oswal Broker</div>
+
+      <h1>Join Our Share Market WhatsApp Community</h1>
+
+      <div class="tagline">Think Big. Think Smarter. Think Motilaal.</div>
+
+      <div class="subtext">
+        Get regular market updates, educational insights, and community discussion in one place.
+      </div>
+
+      <div class="grid">
+        <div class="panel">
+          <h2>What you get inside</h2>
+          <ul>
+            <li>Regular market updates and timely observations</li>
+            <li>Educational insights for better market understanding</li>
+            <li>Focused discussion with interested market participants</li>
+          </ul>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-label">Why join</div>
+          <div class="mini-title">Stay informed with a more structured market-learning experience.</div>
+          <div class="mini-text">
+            A simple way to access updates, learning content, and community engagement through WhatsApp.
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-wrap">
+        <!-- WHATSAPP GROUP LINK IS ALREADY ADDED BELOW -->
+        <!-- If you want to change it later, replace only the href value -->
+        <a class="cta-btn" href="https://chat.whatsapp.com/K5leBdWViNI1t3HTcvQABm?mode=gi_t" target="_blank" rel="noopener noreferrer">
+          Join WhatsApp Group
+        </a>
+
+        <div class="cta-note">Tap the button above to open the WhatsApp group invite.</div>
+      </div>
+
+      <div class="disclaimer">
+        Disclaimer: This communication is for educational and informational purposes only and should not be treated as investment advice or a promise of returns. Investments in securities market are subject to market risks.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
